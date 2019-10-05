@@ -1,0 +1,94 @@
+* {
+	border: 0;
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	font-family: 'Poppins';
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+#head {
+	height: 60vh;
+	width: 100%;
+	display: block;
+	position: relative;
+	background: linear-gradient(to top left, #6666ff 0%, #66ccff 100%);
+	border-bottom-left-radius:50vw 5vw;
+    border-bottom-right-radius:50vw 5vw;
+}
+
+#navbar {
+	font-family: 'Poppins';
+}
+
+#name {
+	width: 30%;
+	padding: 10px 30px;
+	display: inline-block;
+}
+
+#name h1 {
+	padding: 10px;
+	letter-spacing: 5px;
+	color: white;
+	font-weight: 400;
+}
+
+nav {
+	width: 70%;
+	display: inline-block;
+	float: right;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 30px 20px;
+	letter-spacing: 2px;
+	font-weight: 300;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+h1.welcome {
+	padding-top: 100px;
+	text-align: center;
+	font-family: 'Poppins';
+	font-size: 60px;
+	font-weight: 600;
+	color: white;
+}
+
+h5.description {
+	text-align: center;
+	font-family: 'Poppins';
+	font-size: 27px;
+	font-weight: 400;
+	color: white;
+	font-style: italic;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.arrow {
+	width: 40px;
+	height: auto;
+	margin: 350px auto 0;
+	display: block;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+}

@@ -11,7 +11,7 @@ html {
 }
 
 #head {
-	background-image: url("../img/background.jpg"); 
+	background:linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../img/background.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -72,8 +72,14 @@ nav ul {
 	text-align: center;
 	height: auto;
 	display: block;
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
 }
 
+#head img.icon:hover {
+	-webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
 h1.welcome {
 	padding-top: 10px;
 	text-align: center;
@@ -119,6 +125,7 @@ section.intro h2 {
 	font-size: 50px;
 	padding-bottom: 10px;
 }
+
 section.intro p {
 	font-size: 30px;
 	letter-spacing: 1.5px;
