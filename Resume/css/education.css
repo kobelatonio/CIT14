@@ -169,9 +169,15 @@ main .col2 {
     background: #2fbef5;
     padding: 50px;
     text-align: center;
+    height: 100vh;
 }
 
 #trainings h2 {
     color: white;
     font-size: 40px;
+}
+
+#trainings .container {
+    width: 50%;
+    float: left;
 }
