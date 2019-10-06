@@ -167,17 +167,77 @@ main .col2 {
 #trainings {
     margin-top: 40px;
     background: #2fbef5;
-    padding: 50px;
+    padding: 50px 50px 20px;
     text-align: center;
-    height: 100vh;
+    height: 70vh;
 }
 
 #trainings h2 {
     color: white;
     font-size: 40px;
+    margin-bottom: 70px;
+}
+
+#trainings .contain {
+    padding: 0 50px;
 }
 
 #trainings .container {
-    width: 50%;
+    width: 47%;
     float: left;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 8px 8px #005975;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+
+#trainings .container:hover {
+    box-shadow: -8px -8px #005975;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+
+#trainings .left {
+    margin-right: 6%;
+}
+
+#trainings h3 {
+    color: #1a1a1a;
+    font-size: 30px;
+}
+
+#trainings h4 {
+    color: #005975;
+    font-size: 25px;
+    margin-top: -6px;
+}
+
+#trainings h5 {
+    color: #808080;
+    font-size: 19px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+footer {
+    height: 120px;
+    background-color: rgb(230, 230, 230);
+    padding-top: 50px;
+}
+
+footer p {
+	color: rgb(100, 100, 100);
+	text-align: center;
+}
+
+.up:hover {
+    top: -10px;
+}
+
+.up {
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
 }
