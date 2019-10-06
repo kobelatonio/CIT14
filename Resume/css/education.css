@@ -1,0 +1,177 @@
+* {
+	border: 0;
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	font-family: 'Poppins';
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+#head {
+	background:linear-gradient(0deg,rgba(51, 90, 105,0.5),rgba(48, 198, 255,1)),url("../img/univ.jpg");
+	background-position: center;
+	background-size: cover;
+    background-attachment: auto;
+	background-repeat: no-repeat;
+	height: 60vh;
+	width: 100%;
+	display: block;
+	position: relative;
+	background-color: gray;
+}
+
+#navbar {
+	font-family: 'Poppins';
+}
+
+#name {
+	width: 20%;
+	padding: 13px 20px 10px;
+    margin-left: 20px;
+    float:left;
+    background: url("../img/logo.png");
+    background-position: left;
+	background-size: 150px;
+	background-repeat: no-repeat;
+    height: 80px;
+    transition: background 0.6s;
+}
+
+#name:hover {
+    background: url("../img/logo3.png");
+    background-position: left;
+	background-size: 150px;
+	background-repeat: no-repeat;
+}
+
+nav {
+	width: 70%;
+	display: inline-block;
+	float: right;
+    margin-bottom: 100px;
+}
+
+nav ul li{
+	list-style: none;
+	color: white;
+	display: inline-block;
+}
+
+nav ul li a {
+	display: block;
+	padding: 30px 20px;
+	letter-spacing: 2px;
+	font-weight: 300;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #0000cc;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+
+nav ul li a.current{
+	background: linear-gradient(to bottom, rgb(2, 139, 191) 0%, rgba(0,0,0,0) 100%);
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+section.intro {
+    margin: 0 auto;
+    padding-top: 10px;
+    text-align: center;
+}
+
+h1.welcome {
+	font-family: 'Poppins';
+	font-size: 130px;
+	font-weight: 600;
+	color: white;
+    text-align: center;
+    padding: 30px 50px 30px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+main {
+    padding-top: 50px;
+}
+
+main .col1 {
+    width: 47%;
+    float: left;
+    display: inline-block;
+    margin-top: -5px;
+}
+
+main .col2 {
+    width: 6%;
+    float: left;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+#education h1 {
+    color: #808080;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#education h2 {
+    color: #0892c7;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#education h3 {
+    color: #1a1a1a;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: -5px;
+}
+
+#education h4 {
+    color: #2fbef5;
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: -3px;
+}
+
+.right h1, .right h2, .right h3, .right h4 {
+    text-align: right;
+}
+
+.left h1 {
+    text-align: left;
+}
+
+#education img {
+    width: 30px;
+}
+
+.space {
+    display: block;
+    clear: both;
+}
+
+#trainings {
+    margin-top: 40px;
+    background: #2fbef5;
+    padding: 50px;
+    text-align: center;
+}
+
+#trainings h2 {
+    color: white;
+    font-size: 40px;
+}

@@ -11,9 +11,10 @@ html {
 }
 
 #head {
-	background:linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../img/background.jpg");
+	background:linear-gradient(0deg,rgba(51, 90, 105,0.5),rgba(48, 198, 255,0.6)),url("../img/background.jpg");
 	background-position: center;
 	background-size: cover;
+    background-attachment: fixed;
 	background-repeat: no-repeat;
 	height: 100vh;
 	width: 100%;
@@ -22,42 +23,56 @@ html {
 	background-color: gray;
 }
 
-#navbar {
-	background-color: rgba(0, 0, 0, 0.4);
-	font-family: 'Poppins';
-}
-
 #name {
-	width: 30%;
-	padding: 10px 30px;
-	display: inline-block;
+	width: 20%;
+	padding: 13px 20px 10px;
+    margin-left: 20px;
+    float:left;
+    background: url("../img/logo.png");
+    background-position: left;
+	background-size: 150px;
+	background-repeat: no-repeat;
+    height: 80px;
+    transition: background 0.35s;
 }
 
-#name h1 {
-	padding: 10px;
-	letter-spacing: 5px;
-	color: white;
-	font-weight: 400;
+#name:hover {
+    background: url("../img/logo2.png");
+    background-position: left;
+	background-size: 150px;
+	background-repeat: no-repeat;
 }
 
 nav {
 	width: 70%;
 	display: inline-block;
 	float: right;
+    margin-bottom: 100px;
 }
 
-nav ul li a{
-	text-decoration: none;
-	color: white;
-	display: block;
-}
-
-nav ul li {
+nav ul li{
 	list-style: none;
+	color: white;
 	display: inline-block;
+}
+
+nav ul li a {
+	display: block;
 	padding: 30px 20px;
 	letter-spacing: 2px;
 	font-weight: 300;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #07e8d9;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+
+nav ul li a.current{
+	background: linear-gradient(to bottom, rgb(9, 107, 145) 0%, rgba(0,0,0,0) 100%);
 }
 
 nav ul {
@@ -67,19 +82,24 @@ nav ul {
 }
 
 #head img.icon {
-	margin: 20vh auto 0;
+	margin: 100px auto 0;
 	border-radius: 50%;
 	text-align: center;
-	height: auto;
 	display: block;
-	-webkit-transition: -webkit-transform .8s ease-in-out;
-          transition:         transform .8s ease-in-out;
+    width: 120px;
+    clear: both;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
 }
 
 #head img.icon:hover {
-	-webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+	border-radius: 30% 10%;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transform: scale(1.2);
+    border: 2px solid white;
 }
+
 h1.welcome {
 	padding-top: 10px;
 	text-align: center;
@@ -98,25 +118,33 @@ h5.description {
 	font-style: italic;
 }
 
-.arrow {
-	width: 40px;
-	height: auto;
-	margin: 350px auto 0;
-	display: block;
-	position: absolute;
-	bottom: 20px;
-	left: 50%;
+div.arrow {
+    width: 55px;
+    height: 55px;
+    background: url("../img/arrow.png");
+    background-position: center;
+	background-size: 55px;
+	background-repeat: no-repeat;
+    margin: 20vh auto 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+div.arrow:hover {
+    background-image: url("../img/arrow2.png");
+    background-position: center;
+	background-size: 55px;
+	background-repeat: no-repeat;
+    border-radius: 50%;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
 }
 
 section.intro {
 	height: 100vh;
 	background: linear-gradient(to top left, #6666ff 0%, #66ccff 100%);
-	padding: 25vh 200px 0;
+	padding: 20vh 200px 0;
 	font-family: 'Poppins';
-	/*background-image: url("../img/white2.jpg"); 
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;*/
 	text-align: center;
 }
 
@@ -175,22 +203,116 @@ section.col1, section.col2, section.col3 {
 	border-bottom: 1px solid rgb(220, 220, 220);
 } 
 
-.col6 p {
-	position: relative;
+section.col1, section.col2, section.col3, section.col4, section.col5, section.col6 {
+    transition: 1s;
+    -webkit-transition: 0.5s;
+} 
+
+section.col1:hover, section.col2:hover, section.col3:hover, section.col4:hover, section.col5:hover, section.col6:hover {
+	background: #0099ff;
+    transition: 1s;
+    -webkit-transition: 0.5s;
+} 
+
+section.col1 {
+    border-top-left-radius: 20px;
+    background: url("../img/skills.png");
+    background-position: center;
+	background-size: 60px;
+	background-repeat: no-repeat;
+}
+
+section.col1:hover {
+    background-image: url("../img/skills2.png");
+    background-position: center;
+	background-size: 75px;
+	background-repeat: no-repeat;
+}
+
+section.col2 {
+    background: url("../img/education.png");
+    background-position: center;
+	background-size: 120px;
+	background-repeat: no-repeat;
+}
+
+section.col2:hover {
+    background-image: url("../img/education2.png");
+    background-position: center;
+	background-size: 140px;
+	background-repeat: no-repeat;
+}
+
+section.col3 {
+    border-top-right-radius: 20px;
+    background: url("../img/achievements.png");
+    background-position: center;
+	background-size: 100px;
+	background-repeat: no-repeat;
+}
+
+section.col3:hover {
+    background-image: url("../img/achievements2.png");
+    background-position: center;
+	background-size: 120px;
+	background-repeat: no-repeat;
+}
+
+section.col4 {
+    border-bottom-left-radius: 20px;
+    background: url("../img/portfolio.png");
+    background-position: center;
+	background-size: 110px;
+	background-repeat: no-repeat;
+}
+
+section.col4:hover {
+    background-image: url("../img/portfolio2.png");
+    background-position: center;
+	background-size: 130px;
+	background-repeat: no-repeat;
+}
+
+section.col5 {
+    background: url("../img/contact.png");
+    background-position: center;
+	background-size: 130px;
+	background-repeat: no-repeat;
+}
+
+section.col5:hover {
+    background-image: url("../img/contact2.png");
+    background-position: center;
+	background-size: 150px;
+	background-repeat: no-repeat;
+}
+
+section.col6 {
+    border-bottom-right-radius: 20px;
+    background: url("../img/home.png");
+    background-position: center;
+	background-size: 110px;
+	background-repeat: no-repeat;
+}
+
+section.col6:hover {
+    background-image: url("../img/home2.png");
+    background-position: center;
+	background-size: 130px;
+	background-repeat: no-repeat;
+}
+
+.resume p {
+    height: 100px;
+    position: relative;
 	float: left;
-	top: 50%;
+	top: 83%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-}
-
-.col6 a {
-	text-decoration: none;
-	color: #6666ff;
-	font-size: 20px;
-}
-
-.col6 a:visited {
-	color: #6666ff; 
+    clear: left;
+    font-size: 30px;
+    font-weight: 600;
+    color: #0099ff;
 }
 
 footer {
