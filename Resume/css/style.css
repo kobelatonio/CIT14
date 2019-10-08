@@ -146,7 +146,7 @@ div.arrow:hover {
 }
 
 section.intro {
-	height: 750px;
+	height: 700px;
 	background: linear-gradient(to top left, #0099ff 0%, #0099ff 100%);
 	padding: 180px 200px 0;
 	font-family: 'Poppins';
@@ -171,14 +171,14 @@ section.intro p {
 }
 
 section.resume {
-	height: 70vh;
+	height: 200px;
 	background: white;
 }
 
 section.white {
-	height: 700px;
+	height: 350px;
 	width: 80vw;
-	margin-top: -15vh;
+	margin-top: -80px;
 	margin-left: auto; 
 	margin-right: auto; 
 	left: 0;
@@ -187,7 +187,6 @@ section.white {
 	z-index: 100;
 	position: absolute;
 	border-radius: 20px;
-	/*border: 1px solid rgb(225, 225, 225);*/
 	-webkit-box-shadow: 0px 0px 30px -16px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 30px -16px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 30px -16px rgba(0,0,0,0.75);
@@ -195,14 +194,14 @@ section.white {
 
 section.col1, section.col3, section.col4, section.col6 {
 	width: 33%;
-	height: 50%;
+	height: 100%;
 	display: inline-block;
 	float: left
 }
 
 section.col2, section.col5 {
 	width: 34%;
-	height: 50%;
+	height: 100%;
 	display: inline-block;
 	border-left: 1px solid rgb(220, 220, 220);
 	border-right: 1px solid rgb(220, 220, 220);
@@ -226,6 +225,7 @@ section.col1:hover, section.col2:hover, section.col3:hover, section.col4:hover, 
 
 section.col1 {
 	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
 	background: url("../img/skills.png");
 	background-position: center;
 	background-size: 60px;
@@ -255,6 +255,7 @@ section.col2:hover {
 
 section.col3 {
 	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
 	background: url("../img/achievements.png");
 	background-position: center;
 	background-size: 100px;
@@ -326,9 +327,9 @@ section.col6:hover {
 }
 
 footer {
-	height: 30vh;
+	height: 250px;
 	background-color: rgb(230, 230, 230);
-	padding-top: 21vh;
+	padding-top: 150px;
 }
 
 footer p {
