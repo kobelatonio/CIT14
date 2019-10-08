@@ -16,7 +16,7 @@ html {
 	background-size: cover;
     background-attachment: auto;
 	background-repeat: no-repeat;
-	height: 60vh;
+	height: 450px;
 	width: 100%;
 	display: block;
 	position: relative;
@@ -169,7 +169,7 @@ main .col2 {
     background: #2fbef5;
     padding: 50px 50px 20px;
     text-align: center;
-    height: 70vh;
+    height: 500px;
 }
 
 #trainings h2 {

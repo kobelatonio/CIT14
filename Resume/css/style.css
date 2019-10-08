@@ -11,10 +11,10 @@ html {
 }
 
 #head {
-	background:linear-gradient(0deg,rgba(51, 90, 105,0.5),rgba(48, 198, 255,0.6)),url("../img/background.jpg");
+	background:linear-gradient(0deg,rgba(0, 153, 255,0.3),rgba(0, 153, 255,0.9)),url("../img/background.jpg");
 	background-position: center;
 	background-size: cover;
-    background-attachment: fixed;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	height: 100vh;
 	width: 100%;
@@ -26,19 +26,19 @@ html {
 #name {
 	width: 20%;
 	padding: 13px 20px 10px;
-    margin-left: 20px;
-    float:left;
-    background: url("../img/logo.png");
-    background-position: left;
+	margin-left: 20px;
+	float:left;
+	background: url("../img/logo.png");
+	background-position: left;
 	background-size: 150px;
 	background-repeat: no-repeat;
-    height: 80px;
-    transition: background 0.35s;
+	height: 80px;
+	transition: background 0.35s;
 }
 
 #name:hover {
-    background: url("../img/logo2.png");
-    background-position: left;
+	background: url("../img/logo2.png");
+	background-position: left;
 	background-size: 150px;
 	background-repeat: no-repeat;
 }
@@ -47,7 +47,7 @@ nav {
 	width: 70%;
 	display: inline-block;
 	float: right;
-    margin-bottom: 100px;
+	margin-bottom: 150px;
 }
 
 nav ul li{
@@ -61,14 +61,14 @@ nav ul li a {
 	padding: 30px 20px;
 	letter-spacing: 2px;
 	font-weight: 300;
-    text-decoration: none;
-    color: white;
+	text-decoration: none;
+	color: white;
 }
 
 nav ul li a:hover {
-    color: #07e8d9;
-    transition: all .4s ease;
-    -webkit-transition: all .4s ease;
+	color: #07e8d9;
+	transition: all .4s ease;
+	-webkit-transition: all .4s ease;
 }
 
 nav ul li a.current{
@@ -82,22 +82,22 @@ nav ul {
 }
 
 #head img.icon {
-	margin: 100px auto 0;
+	margin: 180px auto 0;
 	border-radius: 50%;
 	text-align: center;
 	display: block;
-    width: 160px;
-    clear: both;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
+	width: 160px;
+	clear: both;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
 }
 
 #head img.icon:hover {
 	border-radius: 30% 10%;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    transform: scale(1.2);
-    border: 2px solid white;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	transform: scale(1.2);
+	border: 2px solid white;
 }
 
 h1.welcome {
@@ -119,33 +119,43 @@ h5.description {
 }
 
 div.arrow {
-    width: 55px;
-    height: 55px;
-    background: url("../img/arrow.png");
-    background-position: center;
+	width: 55px;
+	height: 55px;
+	background: url("../img/arrow.png");
+	background-position: center;
 	background-size: 55px;
 	background-repeat: no-repeat;
-    margin: 15vh auto 0;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
+	position: absolute;
+	bottom: 5%;
+	left: 0;
+	right: 0;
+	transition: 0.5s;
+	margin-left: auto; 
+    margin-right: auto; 
+	-webkit-transition: 0.5s;
 }
 
 div.arrow:hover {
-    background-image: url("../img/arrow2.png");
-    background-position: center;
+	background-image: url("../img/arrow2.png");
+	background-position: center;
 	background-size: 55px;
 	background-repeat: no-repeat;
-    border-radius: 50%;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
+	border-radius: 50%;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
 }
 
 section.intro {
-	height: 100vh;
-	background: linear-gradient(to top left, #3257fa 0%, #0099ff 100%);
-	padding: 20vh 200px 0;
+	height: 750px;
+	background: linear-gradient(to top left, #0099ff 0%, #0099ff 100%);
+	padding: 180px 200px 0;
 	font-family: 'Poppins';
 	text-align: center;
+}
+
+section.intro .container {
+	width: 1100px;
+	margin: 0 auto;
 }
 
 section.intro h2 {
@@ -166,11 +176,11 @@ section.resume {
 }
 
 section.white {
-	height: 100vh;
+	height: 700px;
 	width: 80vw;
 	margin-top: -15vh;
 	margin-left: auto; 
-  	margin-right: auto; 
+	margin-right: auto; 
 	left: 0;
 	right: 0;
 	background: white;
@@ -204,115 +214,115 @@ section.col1, section.col2, section.col3 {
 } 
 
 section.col1, section.col2, section.col3, section.col4, section.col5, section.col6 {
-    transition: 1s;
-    -webkit-transition: 0.5s;
+	transition: 1s;
+	-webkit-transition: 0.5s;
 } 
 
 section.col1:hover, section.col2:hover, section.col3:hover, section.col4:hover, section.col5:hover, section.col6:hover {
 	background: #0099ff;
-    transition: 1s;
-    -webkit-transition: 0.5s;
+	transition: 1s;
+	-webkit-transition: 0.5s;
 } 
 
 section.col1 {
-    border-top-left-radius: 20px;
-    background: url("../img/skills.png");
-    background-position: center;
+	border-top-left-radius: 20px;
+	background: url("../img/skills.png");
+	background-position: center;
 	background-size: 60px;
 	background-repeat: no-repeat;
 }
 
 section.col1:hover {
-    background-image: url("../img/skills2.png");
-    background-position: center;
+	background-image: url("../img/skills2.png");
+	background-position: center;
 	background-size: 75px;
 	background-repeat: no-repeat;
 }
 
 section.col2 {
-    background: url("../img/education.png");
-    background-position: center;
+	background: url("../img/education.png");
+	background-position: center;
 	background-size: 120px;
 	background-repeat: no-repeat;
 }
 
 section.col2:hover {
-    background-image: url("../img/education2.png");
-    background-position: center;
+	background-image: url("../img/education2.png");
+	background-position: center;
 	background-size: 140px;
 	background-repeat: no-repeat;
 }
 
 section.col3 {
-    border-top-right-radius: 20px;
-    background: url("../img/achievements.png");
-    background-position: center;
+	border-top-right-radius: 20px;
+	background: url("../img/achievements.png");
+	background-position: center;
 	background-size: 100px;
 	background-repeat: no-repeat;
 }
 
 section.col3:hover {
-    background-image: url("../img/achievements2.png");
-    background-position: center;
+	background-image: url("../img/achievements2.png");
+	background-position: center;
 	background-size: 120px;
 	background-repeat: no-repeat;
 }
 
 section.col4 {
-    border-bottom-left-radius: 20px;
-    background: url("../img/portfolio.png");
-    background-position: center;
+	border-bottom-left-radius: 20px;
+	background: url("../img/portfolio.png");
+	background-position: center;
 	background-size: 110px;
 	background-repeat: no-repeat;
 }
 
 section.col4:hover {
-    background-image: url("../img/portfolio2.png");
-    background-position: center;
+	background-image: url("../img/portfolio2.png");
+	background-position: center;
 	background-size: 130px;
 	background-repeat: no-repeat;
 }
 
 section.col5 {
-    background: url("../img/contact.png");
-    background-position: center;
+	background: url("../img/contact.png");
+	background-position: center;
 	background-size: 130px;
 	background-repeat: no-repeat;
 }
 
 section.col5:hover {
-    background-image: url("../img/contact2.png");
-    background-position: center;
+	background-image: url("../img/contact2.png");
+	background-position: center;
 	background-size: 150px;
 	background-repeat: no-repeat;
 }
 
 section.col6 {
-    border-bottom-right-radius: 20px;
-    background: url("../img/home.png");
-    background-position: center;
+	border-bottom-right-radius: 20px;
+	background: url("../img/home.png");
+	background-position: center;
 	background-size: 110px;
 	background-repeat: no-repeat;
 }
 
 section.col6:hover {
-    background-image: url("../img/home2.png");
-    background-position: center;
+	background-image: url("../img/home2.png");
+	background-position: center;
 	background-size: 130px;
 	background-repeat: no-repeat;
 }
 
 .resume p {
-    height: 100px;
-    position: relative;
+	height: 100px;
+	position: relative;
 	float: left;
 	top: 83%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-    clear: left;
-    font-size: 30px;
-    font-weight: 600;
-    color: #0099ff;
+	clear: left;
+	font-size: 30px;
+	font-weight: 500;
+	color: #0099ff;
 }
 
 footer {

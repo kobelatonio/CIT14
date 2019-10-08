@@ -1,36 +1,36 @@
 * {
-	border: 0;
-	margin: 0;
-	box-sizing: border-box;
-	padding: 0;
-	font-family: 'Poppins';
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Poppins';
 }
 
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 #head {
-	height: 80vh;
-	width: 100%;
-	display: block;
-	position: relative;
-	background: #0099ff;
+    height: 550px;
+    width: 100%;
+    display: block;
+    position: relative;
+    background: #0099ff;
 }
 
 #navbar {
-	font-family: 'Poppins';
+    font-family: 'Poppins';
 }
 
 #name {
-	width: 20%;
-	padding: 13px 20px 10px;
+    width: 20%;
+    padding: 13px 20px 10px;
     margin-left: 20px;
     float:left;
     background: url("../img/logo.png");
     background-position: left;
-	background-size: 150px;
-	background-repeat: no-repeat;
+    background-size: 150px;
+    background-repeat: no-repeat;
     height: 80px;
     transition: background 0.6s;
 }
@@ -38,27 +38,27 @@ html {
 #name:hover {
     background: url("../img/logo3.png");
     background-position: left;
-	background-size: 150px;
-	background-repeat: no-repeat;
+    background-size: 150px;
+    background-repeat: no-repeat;
 }
 
 nav {
-	width: 70%;
-	display: inline-block;
-	float: right;
+    width: 70%;
+    display: inline-block;
+    float: right;
 }
 
 nav ul li{
-	list-style: none;
-	color: white;
-	display: inline-block;
+    list-style: none;
+    color: white;
+    display: inline-block;
 }
 
 nav ul li a {
-	display: block;
-	padding: 30px 20px;
-	letter-spacing: 2px;
-	font-weight: 300;
+    display: block;
+    padding: 30px 20px;
+    letter-spacing: 2px;
+    font-weight: 300;
     background: #0099ff;
     text-decoration: none;
     color: white;
@@ -71,7 +71,7 @@ nav ul li a:hover {
 }
 
 nav ul li a.current{
-	background: linear-gradient(to bottom, #0066ff 0%, #0099ff 100%);
+    background: linear-gradient(to bottom, #0066ff 0%, #0099ff 100%);
     color: #0000cc;
 }
 
@@ -80,9 +80,9 @@ nav ul li a.current:hover {
 }
 
 nav ul {
-	margin: 0;
-	padding: 0;
-	float: right;
+    margin: 0;
+    padding: 0;
+    float: right;
 }
 
 section.intro {
@@ -92,10 +92,10 @@ section.intro {
 }
 
 h1.welcome {
-	font-family: 'Poppins';
-	font-size: 130px;
-	font-weight: 600;
-	color: white;
+    font-family: 'Poppins';
+    font-size: 130px;
+    font-weight: 600;
+    color: white;
     text-align: center;
     padding: 80px 50px 30px;
     line-height: 120px;
@@ -104,21 +104,21 @@ h1.welcome {
 
 section.personal {
     padding-top: 70px;
-    height: 100vh;
-	width: 80vw;
-	margin-top: -15vh;
-	margin-left: auto; 
-  	margin-right: auto; 
-	left: 0;
-	right: 0;
-	background: white;
-	z-index: 100;
-	position: absolute;
-	border-radius: 50px;
-	border: 1px solid rgb(225, 225, 225);
-	-webkit-box-shadow: 0px 0px 30px -16px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 30px -16px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 30px -16px rgba(0,0,0,0.75);
+    height: 680px;
+    width: 80vw;
+    margin-top: -15vh;
+    margin-left: auto; 
+    margin-right: auto; 
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 100;
+    position: absolute;
+    border-radius: 50px;
+    border: 1px solid rgb(225, 225, 225);
+    -webkit-box-shadow: 0px 0px 30px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 30px -16px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 30px -16px rgba(0,0,0,0.75);
     transition: all .4s ease;
     -webkit-transition: all .4s ease;
 }
@@ -127,6 +127,11 @@ section.personal:hover {
     transition: all .4s ease;
     -webkit-transition: all .4s ease;
     transform: scale(1.1);
+}
+
+section.personal .container {
+    width: 1100px;
+    margin: 0 auto;
 }
 
 .personal ul {
@@ -163,14 +168,14 @@ section.personal:hover {
 
 section.technical {
     margin-top: 450px;
-	margin-left: auto; 
-  	margin-right: auto; 
-	left: 0;
-	right: 0;
-	background: #0099ff;
-	z-index: 99;
-	position: absolute;
-    height: 140vh;
+    margin-left: auto; 
+    margin-right: auto; 
+    left: 0;
+    right: 0;
+    background: #0099ff;
+    z-index: 99;
+    position: absolute;
+    height: 970px;
     padding: 180px 50px;
     text-align: center;
 }
@@ -181,6 +186,32 @@ section.technical {
     margin-bottom: 40px; 
 }
 
+.technical h2:after {
+    content: '';
+  position: absolute;
+  display: inline-block;
+  height: 1.2em;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 900px;
+  border-radius: 100px;
+  border: 2px solid #00FFFF;
+  margin-top: 10px;
+  opacity: 0;
+    -webkit-transition: opacity 0.4s, -webkit-transform 0.4s;
+    transition: opacity 0.4s, transform 0.4s;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+}
+
+.technical h2:hover:after {
+  opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
 .front, .back, .frameworks, .design {
     width: 50%;
     float: left;
@@ -189,9 +220,10 @@ section.technical {
 }
 
 .technical h1 {
-    color: rgb(10, 10, 10);
+    color: rgb(250, 250, 250);
     font-size: 30px;
     font-weight: 600;
+    text-shadow: 2px 2px rgb(10, 10, 10);
 }
 
 .html, .sql, .illustrator, .css, .bootstrap, .photoshop, .java, .jquery {
@@ -203,8 +235,8 @@ section.technical {
     transition: all .4s ease;
     -webkit-transition: all .4s ease;
     -webkit-box-shadow: 0px 0px 30px -16px rgba(0,0,0,0.9);
-	-moz-box-shadow: 0px 0px 30px -16px rgba(0,0,0,0.9);
-	box-shadow: 0px 0px 30px -16px rgba(0,0,0,0.9);
+    -moz-box-shadow: 0px 0px 30px -16px rgba(0,0,0,0.9);
+    box-shadow: 0px 0px 30px -16px rgba(0,0,0,0.9);
 }
 
 .html:hover, .sql:hover, .illustrator:hover, .css:hover, .bootstrap:hover, .photoshop:hover, .java:hover, .jquery:hover {
@@ -213,8 +245,8 @@ section.technical {
     transform: scale(0.95);
     background: #00FFFF;
     -webkit-box-shadow: 0px 0px 30px -16px rgba(0,0,0,0);
-	-moz-box-shadow: 0px 0px 30px -16px rgba(0,0,0,0);
-	box-shadow: 0px 0px 30px -16px rgba(0,0,0,0);
+    -moz-box-shadow: 0px 0px 30px -16px rgba(0,0,0,0);
+    box-shadow: 0px 0px 30px -16px rgba(0,0,0,0);
 }
 
 .technical img {
@@ -241,14 +273,14 @@ section.technical {
 
 footer {
     position: relative;
-    top: 200vh;
+    top: 1400px;
     height: 150px;
     background-color: rgb(230, 230, 230);
-    padding-top: 90px;
+    padding-top: 75px;
 }
 
 footer p {
-	color: rgb(100, 100, 100);
-	text-align: center;
-	font-family: 'Poppins';
+    color: rgb(100, 100, 100);
+    text-align: center;
+    font-family: 'Poppins';
 }
